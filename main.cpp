@@ -208,7 +208,13 @@ int Ajugar(Civilizacion* Civi){
 				break;
 			}
 			case 8:{
-				
+				int elec;
+					for (int i =0 ;i<vCivilizaciones;i++){
+						ListarCivi(vCivilizaciones);
+						cout<<"Elija una: "<< endl;
+						cin>> elec;
+					}
+					
 				break;
 			}
 			case 9:{
@@ -327,6 +333,19 @@ int Ajugar(Civilizacion* Civi){
 	//}
 
 	return eleccion;
+}
+
+void Aguerriar(Civilizacion* Civi_atacante,Civilizacion* Civi_defensora ){
+	vector<Guerrero*>guerreros;
+	for (int i =0 ; i<Civi_atacante->getHabitantes().size();i++){
+		if (typeid(Guerrero)==typeid(*Civi_atacante->getHabitantes()[i])){
+			Guerrero* ptguerrero= dynamic_cast<Guerrero*>(Civi_atacante->getHabitantes()[i]);
+			guerreros.push_back(ptguerrero);
+		}
+	}
+	for (int i = 0 ; i<guerreros.size(); i ++){
+		guerreros[i]->Atacar(Civi_defensora[i]);
+	}
 }
 
 

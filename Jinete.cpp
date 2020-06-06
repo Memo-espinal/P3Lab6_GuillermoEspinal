@@ -7,7 +7,7 @@ Jinete::Jinete():Guerrero()
 	
 }
 void Jinete::Atacar (Habitantes* vistima ){
-	
+	vistima->setVida(vistima->getVida()-getAtaque());
 }
 int Jinete:: getVida(){
 	return vida;
@@ -16,6 +16,7 @@ int Jinete:: getFuerza(){
 	return fuerza;
 }
 int Jinete::getAtaque(){
+	ataque= fuerza + vida*0.065;
 	return ataque;
 }
 
