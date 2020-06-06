@@ -209,11 +209,11 @@ int Ajugar(Civilizacion* Civi){
 			}
 			case 8:{
 				int elec;
-					for (int i =0 ;i<vCivilizaciones;i++){
-						ListarCivi(vCivilizaciones);
-						cout<<"Elija una: "<< endl;
-						cin>> elec;
-					}
+//					for (int i =0 ;i<vCivilizaciones;i++){
+//						ListarCivi(vCivilizaciones);
+//						cout<<"Elija una: "<< endl;
+//						cin>> elec;
+//					}
 					
 				break;
 			}
@@ -344,7 +344,7 @@ void Aguerriar(Civilizacion* Civi_atacante,Civilizacion* Civi_defensora ){
 		}
 	}
 	for (int i = 0 ; i<guerreros.size(); i ++){
-		guerreros[i]->Atacar(Civi_defensora[i]);
+		//guerreros[i]->Atacar(Civi_defensora[i]);
 	}
 }
 
