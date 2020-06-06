@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Habitantes.h"
+#include <iostream>
 
 
 Civilizacion::Civilizacion()
@@ -10,6 +11,7 @@ Civilizacion::Civilizacion()
 Civilizacion::Civilizacion(string Dnombre){
 	this->Nombre=Dnombre;
 	casas= 2;
+	
 	alimento=madera=oro=50;
 	for (int i = 0 ; i< 5;i++){
 		
@@ -76,4 +78,9 @@ void Civilizacion::setAlimento(int Dalimentos){
 
 Civilizacion::~Civilizacion()
 {
+	for (int i=0 ; i < vHabitantes.size();i++){
+		delete vHabitantes[i];
+		vHabitantes[i]=NULL;
+	}
+	//delete vHabitantes;
 }

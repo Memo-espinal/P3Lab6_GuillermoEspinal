@@ -14,9 +14,9 @@ class Arquero : public Guerrero
 		int getFuerza();
 		int getAtaque();
 		
-		int setVida(int);
-		int setFuerza(int);
-		int setAtaque();
+		void setVida(int);
+		void setFuerza(int);
+		void setAtaque(int);
 		
 		~Arquero();
 	protected:

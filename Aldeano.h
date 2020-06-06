@@ -10,7 +10,7 @@ class Aldeano : public Habitantes
 		
 			int getVida();
 		
-			int setVida(int );
+			void setVida(int );
 			
 		~Aldeano();
 	protected:

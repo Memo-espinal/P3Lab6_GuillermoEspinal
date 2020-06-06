@@ -1,4 +1,5 @@
 #include "Jinete.h"
+#include <iostream>
 
 Jinete::Jinete():Guerrero()
 {
@@ -18,13 +19,13 @@ int Jinete::getAtaque(){
 	return ataque;
 }
 
-int Jinete::setVida(int Dvida ){
+void Jinete::setVida(int Dvida ){
 	this-> vida = Dvida;
 }
-int Jinete::setFuerza(int Dfuerza){
+void Jinete::setFuerza(int Dfuerza){
 	this->fuerza = Dfuerza;
 }
-int Jinete::setAtaque(int Dataque){
+void Jinete::setAtaque(int Dataque){
 	//this-> ataque = Dataque;
 	ataque= fuerza + vida*0.065;
 }

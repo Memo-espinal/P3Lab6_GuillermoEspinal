@@ -5,6 +5,7 @@ Arquero::Arquero()
 }
 void Arquero::Atacar (Habitantes* vistima ){
 	
+	
 }
 int Arquero:: getVida(){
 	return vida;
@@ -13,18 +14,20 @@ int Arquero:: getFuerza(){
 	return fuerza;
 }
 int Arquero::getAtaque(){
+	ataque= fuerza + vida*0.085;
 	return ataque;
 }
 
-int Arquero::setVida(int Dvida ){
+void Arquero::setVida(int Dvida ){
 	this-> vida = Dvida;
 }
-int Arquero::setFuerza(int Dfuerza){
+void Arquero::setFuerza(int Dfuerza){
 	this->fuerza = Dfuerza;
 }
-int Arquero::setAtaque(){
+void Arquero::setAtaque(int Dataque){
 	//this-> ataque = Dataque;
-	ataque= fuerza + vida*0.085;
+	this->ataque = Dataque;
+	
 }
 
 

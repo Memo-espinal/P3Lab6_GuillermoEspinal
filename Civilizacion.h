@@ -38,12 +38,12 @@ class Civilizacion
 		~Civilizacion();
 	protected:
 		string Nombre;
-		int oro;
-		int madera;
-		int alimento;
-		int casas;
-		int cuarteles;
-		int establos;
+		int oro=0;
+		int madera=0;
+		int alimento=0;
+		int casas=0;
+		int cuarteles=0;
+		int establos=0;
 		
 		vector<Habitantes*>vHabitantes;
 		

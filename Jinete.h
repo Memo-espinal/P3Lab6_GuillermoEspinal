@@ -14,9 +14,9 @@ class Jinete : public Guerrero
 		int getFuerza();
 		int getAtaque();
 		
-		int setVida(int);
-		int setFuerza(int);
-		int setAtaque(int);
+		void setVida(int);
+		void setFuerza(int);
+		void setAtaque(int);
 		
 		
 		~Jinete();

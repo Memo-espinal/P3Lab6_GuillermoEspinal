@@ -13,18 +13,19 @@ int Caballero:: getFuerza(){
 	return fuerza;
 }
 int Caballero::getAtaque(){
+	ataque= fuerza + vida*0.095;
 	return ataque;
 }
 
-int Caballero::setVida(int Dvida ){
+void Caballero::setVida(int Dvida ){
 	this-> vida = Dvida;
 }
-int Caballero::setFuerza(int Dfuerza){
+void Caballero::setFuerza(int Dfuerza){
 	this->fuerza = Dfuerza;
 }
-int Caballero::setAtaque(){
-	//this-> ataque = Dataque;
-	ataque= fuerza + vida*0.095;
+void Caballero::setAtaque(int Dataque){
+	this-> ataque = Dataque;
+
 }
 
 Caballero::~Caballero()

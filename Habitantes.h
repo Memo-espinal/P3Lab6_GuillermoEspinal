@@ -9,7 +9,7 @@ class Habitantes
 		virtual int getVida()=0;
 	
 		
-		virtual int setVida(int )=0;
+		virtual void setVida(int)=0;
 		
 		
 		//virtual void Atacar(Habitante* vistima)=0;
